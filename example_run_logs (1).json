@@ -1,0 +1,300 @@
+[
+  {
+    "category": "easy",
+    "question": "Alice has 3 red apples and twice as many green apples as red. How many apples does she have in total?",
+    "expected": "9 apples",
+    "final_json": {
+      "answer": "9 apples",
+      "status": "success",
+      "reasoning_visible_to_user": "There are 3 red apples and 6 green apples, so the total is 9.",
+      "metadata": {
+        "plan": "{\"problem_type\": \"apples\", \"red\": 3, \"green_multiplier\": 2, \"steps\": [\"Extract the number of red apples.\", \"Calculate the number of green apples.\", \"Add the two quantities.\"]}",
+        "checks": [
+          {
+            "check_name": "independent_calculation_and_constraints",
+            "passed": true,
+            "details": "Expected total: 9 apples."
+          }
+        ],
+        "retries": 0
+      }
+    },
+    "verifier_passed": true,
+    "retries": 0,
+    "test_passed": true
+  },
+  {
+    "category": "easy",
+    "question": "Alice has 5 red apples and twice as many green apples as red. How many apples does she have in total?",
+    "expected": "15 apples",
+    "final_json": {
+      "answer": "15 apples",
+      "status": "success",
+      "reasoning_visible_to_user": "There are 5 red apples and 10 green apples, so the total is 15.",
+      "metadata": {
+        "plan": "{\"problem_type\": \"apples\", \"red\": 5, \"green_multiplier\": 2, \"steps\": [\"Extract the number of red apples.\", \"Calculate the number of green apples.\", \"Add the two quantities.\"]}",
+        "checks": [
+          {
+            "check_name": "independent_calculation_and_constraints",
+            "passed": true,
+            "details": "Expected total: 15 apples."
+          }
+        ],
+        "retries": 0
+      }
+    },
+    "verifier_passed": true,
+    "retries": 0,
+    "test_passed": true
+  },
+  {
+    "category": "easy",
+    "question": "There are 12 chocolates. Ravi eats 4 and buys 3 more. How many does he have?",
+    "expected": "11 chocolates",
+    "final_json": {
+      "answer": "11 chocolates",
+      "status": "success",
+      "reasoning_visible_to_user": "After eating 4, 8 remain. After buying 3 more, the total is 11.",
+      "metadata": {
+        "plan": "{\"problem_type\": \"chocolates\", \"initial\": 12, \"eaten\": 4, \"bought\": 3, \"steps\": [\"Subtract the eaten chocolates.\", \"Add the bought chocolates.\"]}",
+        "checks": [
+          {
+            "check_name": "independent_calculation_and_constraints",
+            "passed": true,
+            "details": "Expected total: 11 chocolates."
+          }
+        ],
+        "retries": 0
+      }
+    },
+    "verifier_passed": true,
+    "retries": 0,
+    "test_passed": true
+  },
+  {
+    "category": "easy",
+    "question": "There are 20 chocolates. Ravi eats 7 and buys 2 more. How many does he have?",
+    "expected": "15 chocolates",
+    "final_json": {
+      "answer": "15 chocolates",
+      "status": "success",
+      "reasoning_visible_to_user": "After eating 7, 13 remain. After buying 2 more, the total is 15.",
+      "metadata": {
+        "plan": "{\"problem_type\": \"chocolates\", \"initial\": 20, \"eaten\": 7, \"bought\": 2, \"steps\": [\"Subtract the eaten chocolates.\", \"Add the bought chocolates.\"]}",
+        "checks": [
+          {
+            "check_name": "independent_calculation_and_constraints",
+            "passed": true,
+            "details": "Expected total: 15 chocolates."
+          }
+        ],
+        "retries": 0
+      }
+    },
+    "verifier_passed": true,
+    "retries": 0,
+    "test_passed": true
+  },
+  {
+    "category": "easy",
+    "question": "A shop sells 5 pens for 10 rupees each. What is the total cost?",
+    "expected": "50 rupees",
+    "final_json": {
+      "answer": "50 rupees",
+      "status": "success",
+      "reasoning_visible_to_user": "5 pens at 10 rupees each cost 50 rupees.",
+      "metadata": {
+        "plan": "{\"problem_type\": \"price\", \"quantity\": 5, \"price_each\": 10, \"steps\": [\"Multiply quantity by unit price.\"]}",
+        "checks": [
+          {
+            "check_name": "independent_calculation_and_constraints",
+            "passed": true,
+            "details": "Expected cost: 50 rupees."
+          }
+        ],
+        "retries": 0
+      }
+    },
+    "verifier_passed": true,
+    "retries": 0,
+    "test_passed": true
+  },
+  {
+    "category": "easy",
+    "question": "A shop sells 8 pens for 5 rupees each. What is the total cost?",
+    "expected": "40 rupees",
+    "final_json": {
+      "answer": "40 rupees",
+      "status": "success",
+      "reasoning_visible_to_user": "8 pens at 5 rupees each cost 40 rupees.",
+      "metadata": {
+        "plan": "{\"problem_type\": \"price\", \"quantity\": 8, \"price_each\": 5, \"steps\": [\"Multiply quantity by unit price.\"]}",
+        "checks": [
+          {
+            "check_name": "independent_calculation_and_constraints",
+            "passed": true,
+            "details": "Expected cost: 40 rupees."
+          }
+        ],
+        "retries": 0
+      }
+    },
+    "verifier_passed": true,
+    "retries": 0,
+    "test_passed": true
+  },
+  {
+    "category": "easy",
+    "question": "A train leaves at 14:30 and arrives at 18:05. How long is the journey?",
+    "expected": "3 hours 35 minutes",
+    "final_json": {
+      "answer": "3 hours 35 minutes",
+      "status": "success",
+      "reasoning_visible_to_user": "The journey lasts 215 minutes.",
+      "metadata": {
+        "plan": "{\"problem_type\": \"journey\", \"departure\": \"14:30\", \"arrival\": \"18:05\", \"steps\": [\"Parse departure and arrival times.\", \"Calculate elapsed time.\", \"Format the duration.\"]}",
+        "checks": [
+          {
+            "check_name": "independent_calculation_and_constraints",
+            "passed": true,
+            "details": "Expected elapsed time: 215 minutes."
+          }
+        ],
+        "retries": 0
+      }
+    },
+    "verifier_passed": true,
+    "retries": 0,
+    "test_passed": true
+  },
+  {
+    "category": "easy",
+    "question": "A train leaves at 09:15 and arrives at 10:45. How long is the journey?",
+    "expected": "1 hour 30 minutes",
+    "final_json": {
+      "answer": "1 hour 30 minutes",
+      "status": "success",
+      "reasoning_visible_to_user": "The journey lasts 90 minutes.",
+      "metadata": {
+        "plan": "{\"problem_type\": \"journey\", \"departure\": \"09:15\", \"arrival\": \"10:45\", \"steps\": [\"Parse departure and arrival times.\", \"Calculate elapsed time.\", \"Format the duration.\"]}",
+        "checks": [
+          {
+            "check_name": "independent_calculation_and_constraints",
+            "passed": true,
+            "details": "Expected elapsed time: 90 minutes."
+          }
+        ],
+        "retries": 0
+      }
+    },
+    "verifier_passed": true,
+    "retries": 0,
+    "test_passed": true
+  },
+  {
+    "category": "tricky",
+    "question": "A meeting needs 60 minutes. There are free slots: 09:00–09:30, 09:45–10:30, 11:00–12:00. Which slots can fit the meeting?",
+    "expected": "11:00–12:00",
+    "final_json": {
+      "answer": "11:00–12:00",
+      "status": "success",
+      "reasoning_visible_to_user": "Selected slots have at least 60 minutes available.",
+      "metadata": {
+        "plan": "{\"problem_type\": \"meeting_slots\", \"required_minutes\": 60, \"slots\": [[\"09:00\", \"09:30\"], [\"09:45\", \"10:30\"], [\"11:00\", \"12:00\"]], \"steps\": [\"Calculate the duration of each slot.\", \"Compare each duration with the required duration.\", \"Return slots that meet or exceed the requirement.\"]}",
+        "checks": [
+          {
+            "check_name": "independent_calculation_and_constraints",
+            "passed": true,
+            "details": "Expected suitable slots: 11:00–12:00."
+          }
+        ],
+        "retries": 0
+      }
+    },
+    "verifier_passed": true,
+    "retries": 0,
+    "test_passed": true
+  },
+  {
+    "category": "tricky",
+    "question": "A train leaves at 23:30 and arrives at 00:15. How long is the journey?",
+    "expected": "0 hours 45 minutes",
+    "final_json": {
+      "answer": "0 hours 45 minutes",
+      "status": "success",
+      "reasoning_visible_to_user": "The journey lasts 45 minutes.",
+      "metadata": {
+        "plan": "{\"problem_type\": \"journey\", \"departure\": \"23:30\", \"arrival\": \"00:15\", \"steps\": [\"Parse departure and arrival times.\", \"Calculate elapsed time.\", \"Format the duration.\"]}",
+        "checks": [
+          {
+            "check_name": "independent_calculation_and_constraints",
+            "passed": true,
+            "details": "Expected elapsed time: 45 minutes."
+          }
+        ],
+        "retries": 0
+      }
+    },
+    "verifier_passed": true,
+    "retries": 0,
+    "test_passed": true
+  },
+  {
+    "category": "tricky",
+    "question": "A meeting needs 30 minutes. There are free slots: 09:00–09:30, 10:00–10:29. Which slots can fit the meeting?",
+    "expected": "09:00–09:30",
+    "final_json": {
+      "answer": "09:00–09:30",
+      "status": "success",
+      "reasoning_visible_to_user": "Selected slots have at least 30 minutes available.",
+      "metadata": {
+        "plan": "{\"problem_type\": \"meeting_slots\", \"required_minutes\": 30, \"slots\": [[\"09:00\", \"09:30\"], [\"10:00\", \"10:29\"]], \"steps\": [\"Calculate the duration of each slot.\", \"Compare each duration with the required duration.\", \"Return slots that meet or exceed the requirement.\"]}",
+        "checks": [
+          {
+            "check_name": "independent_calculation_and_constraints",
+            "passed": true,
+            "details": "Expected suitable slots: 09:00–09:30."
+          }
+        ],
+        "retries": 0
+      }
+    },
+    "verifier_passed": true,
+    "retries": 0,
+    "test_passed": true
+  },
+  {
+    "category": "tricky",
+    "question": "John has some apples and gives away some of them. How many apples remain?",
+    "expected": "failed",
+    "final_json": {
+      "answer": "Unable to verify a correct answer.",
+      "status": "failed",
+      "reasoning_visible_to_user": "The solution failed verification after the permitted attempts.",
+      "metadata": {
+        "plan": "{\"problem_type\": \"unsupported\", \"steps\": [\"The offline parser does not recognize this question format.\"]}",
+        "checks": [
+          {
+            "check_name": "independent_calculation_and_constraints",
+            "passed": false,
+            "details": "Unsupported problem type; cannot verify."
+          },
+          {
+            "check_name": "independent_calculation_and_constraints",
+            "passed": false,
+            "details": "Unsupported problem type; cannot verify."
+          },
+          {
+            "check_name": "independent_calculation_and_constraints",
+            "passed": false,
+            "details": "Unsupported problem type; cannot verify."
+          }
+        ],
+        "retries": 2
+      }
+    },
+    "verifier_passed": false,
+    "retries": 2,
+    "test_passed": true
+  }
+]
